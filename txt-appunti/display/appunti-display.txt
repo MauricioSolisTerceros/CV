@@ -1,0 +1,51 @@
+DISPLAY PROPERTY
+link:https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+    BLOCK:
+    INLINE:
+    INLINE-BLOCK:
+    NONE:
+
+Per default esistono dei elementi/tag che vengono chiamati display a blocco, ovvero tutti quei elementi che vanno a 
+occupare una intera riga, impedendo a qualsiasi altro elemento di posizionarsi accanto a sinistra o a destra
+
+    Elementi di blocco piu comuni sono:
+        -Paragarafi : p 
+        -Headers/Intestazioni/Titoli : da h1 a h6
+        -Divisions : div
+        -Liste e elementi delle liste : ol, ul, li
+        -Forms : form/moduls
+
+    Elementi inline piu comuni sono:
+        -Spans : span
+        -Images : img
+        -Anchor : a 
+
+    Elemento utile per sostituire gli elementi di blocco piu comuni e lo span che occupa solo lo spazio che deve.
+
+PERCHE' DOVREMMO USARE GLI ELEMENTI DI LINEA INVECE DEGLI ELEMENTI DI BLOCCO?
+    -Sono piu flessibili, ma c'è un problema per gli elementi di linea non è possibile indicare la lunghezza 
+        span{
+            width : 50px ----non è possibile eseguire questa proprieta per lo span, quindi il css non modifica nulla
+        }
+
+PER POTER PERMETTERE A DUE ELEMENTI DI BLOCCO DI 'AFFIANCARSI' OCCORE CAMBAIRE IL DISPLAY DI OGNI DATO ELEMENTO.
+    p{
+        display : inline; ---permette di sostituire la proprieta di default di p, da block a inline
+    }
+
+    -pero c'è uno svantaggio, facendo cosi abbiamo perso la possibilita di modificare la lunghezza del nostro elemento
+
+
+SOLUZIONE MIGLIORE A QUESTO PUNTO E' DARE VALORE ALLA PROPRIETA DISPLAY : INLINE-BLOCK
+    Mi permette di poter mettere in linea i miei elementi specificati e dare loro una larghezza da me specificata
+    p{
+        display : inline-block ---permette di poter mettere in linea i miei elementi specificati e dare loro una larghezza
+    }
+
+DISPLAY : NONE 
+    Non mi mostra l'elemento specificato, e va a rimuovere la sua posizione
+
+    IMPORTANTE, a differenza del  Visibility : hidden, il DISPLAY : NONE rimuove la posizione occupatat dall'elemento specificato
+
+

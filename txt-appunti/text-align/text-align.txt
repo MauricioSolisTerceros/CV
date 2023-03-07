@@ -1,0 +1,8 @@
+Un modo per poter centrare gli elementi è utilizzando la proprieta text-align : center
+    -pero non è molto vantaggioso e conveniente.
+
+MIGLIOR MODO PER CENTRARE IL CONTENUTO DI UN ELEMENTO/UN ELEMENTO E' USARE IL MARGIN : AUTO
+    -A differenza del text-align : center, MARGIN : AUTO centrerà l'elemento/il contenuto dell'elemento sia in orizzontale che in verticale
+        body{
+            margin: 0;
+        }

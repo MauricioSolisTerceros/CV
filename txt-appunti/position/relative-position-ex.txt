@@ -1,0 +1,39 @@
+esempio modifica posizione di blocchi
+
+    HTML: 
+            <div class="top-container">
+
+             </div>
+            <div class="middle-container">
+
+            </div>
+            <div class="bottom-container">
+
+            </div>
+    CSS:
+        .top-container{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            display: inline-block;
+            position: relative;
+            left: 200px;
+        }
+
+        .middle-container{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+            position: relative;
+            right: 100px;
+        }
+
+        .bottom-container{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            display: inline-block;
+            position: relative;
+            right: 100px;
+        }

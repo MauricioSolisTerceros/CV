@@ -1,0 +1,30 @@
+POSITION
+
+Ci sono quattro valori possibili da assegnare a position:
+    -STATIC
+    -RELATIVE
+    -ABSOLUTED
+    -FIXED
+
+STATIC : tutti gli elementi HTML di default hanno una position : static (solo HTML senza CSS)
+
+RELATIVE : ci permette di posizionare l'elemento specificato inserendo la posizione che vogliamo dargli noi 
+    h1{
+        position: relative;
+        left:20px;
+        top:50px;
+        right:20px;
+        bottom:50px
+    }
+
+ABSOLUTED : ci permette di spostare il nostro elemento in maniera piu flessibile rispetto al relative
+
+FIXED : rende 'fisso' l'elemento specificato nello schermo (blocca la posizione occupata dall'elemento)
+
+    .bottom-container{
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        display: inline-block;
+        position: fixed;
+    }
